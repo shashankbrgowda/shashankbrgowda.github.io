@@ -134,6 +134,13 @@ body {
     height: auto;
   }
 
+  .sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+  }
+
   .pictures {
     flex-direction: row;
     height: 80px;
