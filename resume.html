@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume | Shashank Budhanuru Ramaraju</title>
+  <meta name="description" content="Personal site of Shashank Budhanuru Ramaraju.">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <button class="theme" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">&#9680;</button>
+
+  <aside class="sidebar">
+    <img src="images/pp.jpg" alt="Shashank Budhanuru Ramaraju">
+    <h1>Shashank Budhanuru Ramaraju</h1>
+
+    <nav class="pages">
+      <a href="index.html">About</a>
+      <a href="resume.html" class="current">Resume</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <nav class="links">
+      <a href="https://www.linkedin.com/in/shashank-b-r-0737689b/" target="_blank" rel="noopener" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/shashankbrgowda" target="_blank" rel="noopener" title="GitHub"><img src="images/icons/github.svg" alt="GitHub"></a>
+      <a href="https://orcid.org/0000-0001-8907-5313" target="_blank" rel="noopener" title="ORCID"><img src="images/icons/orcid.svg" alt="ORCID"></a>
+      <a href="https://shashankbrgowda.substack.com/" target="_blank" rel="noopener" title="Substack"><img src="images/icons/substack.svg" alt="Substack"></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <h2>Work Experience</h2>
+    <ul>
+      <li class="job">
+        <strong>Software Developer, <img src="images/icons/ebi.png" alt="">EMBL-EBI</strong>
+        <span>2022 &ndash; Present</span>
+        <ul>
+          <li>
+            Built custom features for
+            <a href="https://github.com/GMOD/Apollo3" target="_blank" rel="noopener">Apollo3</a>
+            (<a href="https://www.biorxiv.org/content/10.64898/2026.06.08.730970v2" target="_blank" rel="noopener">bioRxiv</a>),
+            a genome annotation plugin for
+            <a href="https://github.com/GMOD/jbrowse-components" target="_blank" rel="noopener">JBrowse 2</a>,
+            tailored to the curation workflow of EMBL-EBI's Havana team, who
+            produce GENCODE's manual gene annotation.
+          </li>
+          <li>
+            Spearheaded the creation of a custom Havana plugin and integration
+            service for syncing annotation data into Otter, EMBL-EBI's manual
+            genome annotation system.
+          </li>
+          <li>
+            Successfully rolled out Apollo3 to the manual annotation team,
+            setting up a Kubernetes environment and managing releases.
+          </li>
+          <li>
+            Developed features for the new
+            <a href="https://www.ensembl.org/" target="_blank" rel="noopener">Ensembl</a>
+            website, including genome search using Tantivy (via PyO3) with
+            10&ndash;20 ms p99 latency, and led the setup of monitoring and
+            alerting across all services with Prometheus and Grafana.
+          </li>
+        </ul>
+        <p class="skills">
+          <span class="lang">Python</span>
+          <span class="lang">TypeScript</span>
+          <span class="lang">Rust</span>
+          <span class="lang">Java</span>
+          <span class="framework">FastAPI</span>
+          <span class="framework">ReactJS</span>
+          <span class="data">MongoDB</span>
+          <span class="data">MySQL</span>
+          <span class="data">Tantivy</span>
+          <span class="infra">Docker</span>
+          <span class="infra">Kubernetes</span>
+          <span class="infra">Grafana</span>
+          <span class="infra">ELK</span>
+        </p>
+      </li>
+      <li class="job">
+        <strong>Senior Software Engineer, <img src="images/icons/lowes.png" alt="">Lowe's</strong>
+        <span>2020 &ndash; 2022</span>
+        <ul>
+          <li>
+            Co-designed the inventory ingestion service with the architect,
+            moving aggregation from Kafka Streams (RocksDB) to PostgreSQL to
+            simplify the architecture.
+          </li>
+          <li>
+            Replaced the Hazelcast caching layer with open-source Netflix
+            Hollow, eliminating licensing costs.
+          </li>
+          <li>
+            Built the inventory picture API (~15k requests/sec at ~10 ms p99)
+            and inventory reservation microservice on the Hollow caching layer.
+          </li>
+        </ul>
+        <p class="skills">
+          <span class="lang">Java</span>
+          <span class="framework">Spring Boot</span>
+          <span class="framework">Spring WebFlux</span>
+          <span class="framework">gRPC</span>
+          <span class="framework">JUnit</span>
+          <span class="framework">Mockito</span>
+          <span class="framework">TDD</span>
+          <span class="data">Kafka</span>
+          <span class="framework">Kafka Streams</span>
+          <span class="data">PostgreSQL</span>
+          <span class="data">Cassandra</span>
+          <span class="data">Hazelcast</span>
+          <span class="data">Netflix Hollow</span>
+          <span class="infra">Confluent Control Center</span>
+          <span class="infra">Dynatrace</span>
+          <span class="infra">ELK</span>
+          <span class="infra">Grafana</span>
+          <span class="infra">Jenkins</span>
+          <span class="infra">Spinnaker</span>
+          <span class="infra">Docker</span>
+          <span class="infra">Kubernetes</span>
+          <span class="infra">GCP</span>
+        </p>
+      </li>
+      <li class="job">
+        <strong>Software Engineer, <img src="images/icons/lowes.png" alt="">Lowe's</strong>
+        <span>2018 &ndash; 2020</span>
+        <ul>
+          <li>
+            Developed Kafka Streams services that aggregated out-of-order
+            inventory updates from 1,800+ stores and 200+ other facilities
+            (20k&ndash;40k events/sec at peak) into Cassandra snapshots, the
+            single source of truth across omni channel platforms.
+          </li>
+          <li>
+            Load-tested the inventory services with the performance engineering
+            team and tuned them, including the Kafka Streams applications, to
+            sustain peak load.
+          </li>
+          <li>
+            Led development of Node Star, a web application that lets business
+            users configure sourcing rules across Lowe's locations.
+          </li>
+        </ul>
+        <p class="skills">
+          <span class="lang">Java</span>
+          <span class="lang">TypeScript</span>
+          <span class="framework">Spring Boot</span>
+          <span class="framework">ReactJS</span>
+          <span class="framework">JUnit</span>
+          <span class="framework">Mockito</span>
+          <span class="framework">TDD</span>
+          <span class="data">Kafka</span>
+          <span class="framework">Kafka Streams</span>
+          <span class="data">Cassandra</span>
+          <span class="data">Hazelcast</span>
+          <span class="infra">Confluent Control Center</span>
+          <span class="infra">Dynatrace</span>
+          <span class="infra">Splunk</span>
+          <span class="infra">Grafana</span>
+          <span class="infra">Jenkins</span>
+          <span class="infra">Spinnaker</span>
+          <span class="infra">Docker</span>
+          <span class="infra">Kubernetes</span>
+          <span class="infra">GCP</span>
+        </p>
+      </li>
+      <li class="job">
+        <strong>Associate Software Engineer, <img src="images/icons/lowes.png" alt="">Lowe's</strong>
+        <span>2016 &ndash; 2018</span>
+        <ul>
+          <li>
+            Built an invoice validation web application that automatically
+            flagged mismatches between invoices and purchase orders.
+          </li>
+          <li>
+            Built a port allocation web application that let business users
+            route shipping containers to Lowe's facilities based on demand.
+          </li>
+        </ul>
+        <p class="skills">
+          <span class="lang">Java</span>
+          <span class="framework">Spring</span>
+          <span class="framework">AngularJS</span>
+          <span class="framework">JUnit</span>
+          <span class="framework">Mockito</span>
+          <span class="framework">TDD</span>
+          <span class="data">DB2</span>
+          <span class="infra">IBM WebSphere</span>
+        </p>
+      </li>
+      <li class="job">
+        <strong>System Software Engineer Intern, <img src="images/icons/akamai.png" alt="">Akamai Technologies</strong>
+        <span>2016</span>
+        <ul>
+          <li>
+            Wrote Python scripts to ingest access logs in multiple formats into
+            Elasticsearch, Akamai's internal ELK based log analysis tool.
+          </li>
+        </ul>
+        <p class="skills">
+          <span class="lang">Python</span>
+          <span class="infra">ELK</span>
+        </p>
+      </li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>B.E. in Computer Science and Engineering</strong>, PES College of Engineering (VTU), Mandya
+        <span>2012 &ndash; 2016</span>
+        <p>Activities and societies: IEEE PESCE Webmaster</p>
+      </li>
+    </ul>
+  </main>
+
+</body>
+</html>

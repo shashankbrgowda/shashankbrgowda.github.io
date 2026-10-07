@@ -6,142 +6,65 @@
   <title>Shashank Budhanuru Ramaraju</title>
   <meta name="description" content="Personal site of Shashank Budhanuru Ramaraju.">
   <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
 </head>
 <body>
+
+  <button class="theme" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">&#9680;</button>
 
   <aside class="sidebar">
     <img src="images/pp.jpg" alt="Shashank Budhanuru Ramaraju">
     <h1>Shashank Budhanuru Ramaraju</h1>
 
     <nav class="pages">
-      <a href="index.html" class="current">About (cv)</a>
-      <a href="pictures.html">Pictures</a>
-      <a href="projects.html">Personal Projects</a>
-      <a href="blog.html">Blog Posts</a>
+      <a href="index.html" class="current">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="gallery.html">Gallery</a>
     </nav>
 
-    <h2>Links</h2>
-    <nav>
-      <a href="https://www.linkedin.com/in/shashank-b-r-0737689b/" target="_blank" rel="noopener"><img src="images/icons/linkedin.svg" alt="">LinkedIn</a>
-      <a href="https://github.com/shashankbrgowda" target="_blank" rel="noopener"><img src="images/icons/github.svg" alt="">GitHub</a>
-      <a href="https://orcid.org/0000-0001-8907-5313" target="_blank" rel="noopener"><img src="images/icons/orcid.svg" alt="">ORCID</a>
-      <a href="https://shashankbrgowda.substack.com/" target="_blank" rel="noopener"><img src="images/icons/substack.svg" alt="">Substack</a>
+    <nav class="links">
+      <a href="https://www.linkedin.com/in/shashank-b-r-0737689b/" target="_blank" rel="noopener" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/shashankbrgowda" target="_blank" rel="noopener" title="GitHub"><img src="images/icons/github.svg" alt="GitHub"></a>
+      <a href="https://orcid.org/0000-0001-8907-5313" target="_blank" rel="noopener" title="ORCID"><img src="images/icons/orcid.svg" alt="ORCID"></a>
+      <a href="https://shashankbrgowda.substack.com/" target="_blank" rel="noopener" title="Substack"><img src="images/icons/substack.svg" alt="Substack"></a>
     </nav>
   </aside>
 
   <main class="content">
     <h2>About</h2>
     <p>
-      I'm a software engineer with 10 years of experience, currently working
-      for EMBL-EBI in Cambridge. I build tools and web apps that help
-      researchers annotate and explore genome data. Before this, I worked for
-      a Fortune 50 retailer, where I designed and built low-latency inventory
-      streaming systems and microservices. In my free time I like hiking and
-      playing badminton, and I take pictures whenever I travel.
+      I'm a software engineer with 10 years of experience, currently at
+      EMBL-EBI in Cambridge, where I build tools that help researchers explore
+      and annotate genomic data.
     </p>
-
-    <h2>Work Experience</h2>
-    <ul>
-      <li class="job">
-        <strong>Software Developer, <img src="images/icons/ebi.png" alt="">EMBL-EBI</strong>
-        <span>2022 &ndash; Present</span>
-        <p>
-          Worked on <a href="https://github.com/GMOD/Apollo3" target="_blank" rel="noopener">Apollo3</a>
-          (<a href="https://www.biorxiv.org/content/10.64898/2026.06.08.730970v2" target="_blank" rel="noopener">bioRxiv</a>),
-          a genome annotation plugin for
-          <a href="https://github.com/GMOD/jbrowse-components" target="_blank" rel="noopener">JBrowse 2</a>.
-          Developed features for the Havana team in Apollo3, along with a custom
-          plugin and an integration service that bring annotation data from
-          Apollo3 into our legacy Otter annotation database. Set up the
-          Kubernetes environment and handled deployments of Apollo3 and the
-          integration service for the Havana team. As part of the Ensembl team,
-          worked on various features of the new
-          <a href="https://www.ensembl.org/" target="_blank" rel="noopener">Ensembl</a> website, and set up
-          monitoring and alerting for its backend services using Prometheus and
-          Grafana.
-        </p>
-      </li>
-      <li class="job">
-        <strong>Senior Software Engineer, <img src="images/icons/lowes.png" alt="">Lowe's</strong>
-        <span>2020 &ndash; 2022</span>
-        <p>
-          Redesigned and developed the inventory consumption and management
-          system, working closely with the architect. Moved inventory
-          aggregation from Kafka Streams (RocksDB) to PostgreSQL and replaced
-          the Hazelcast caching layer with Netflix Hollow. Developed the
-          inventory reservation microservice and a low-latency inventory
-          picture microservice on the new caching layer, handling ~15k requests
-          per second with a p99 latency of ~10 ms. Provided on-call support and
-          took part in war rooms during peak sales events.
-        </p>
-      </li>
-      <li class="job">
-        <strong>Software Engineer, <img src="images/icons/lowes.png" alt="">Lowe's</strong>
-        <span>2018 &ndash; 2020</span>
-        <p>
-          Developed inventory streaming services with Kafka Streams that
-          consumed and aggregated out-of-order inventory updates from 1,800+
-          stores and 200+ other Lowe's facilities, with snapshots stored in
-          Cassandra as the single source of truth across omnichannel platforms.
-          At peak, during nightly batch updates, these services handled
-          20k&ndash;40k events per second. Also worked on features in the
-          inventory pickup microservice and the Hazelcast caching service.<br>
-          Worked with the performance engineering team to load-test the
-          inventory services and tuned them to improve performance. Provided
-          on-call support and took part in war rooms during peak sales events.
-        </p>
-      </li>
-      <li class="job">
-        <strong>Associate Software Engineer, <img src="images/icons/lowes.png" alt="">Lowe's</strong>
-        <span>2016 &ndash; 2018</span>
-        <p>
-          As part of the import sourcing team, worked on a commercial and
-          service invoice validation web application that automatically flagged
-          mismatches between invoices and purchase orders for business users.
-          Also worked on a port allocation web application that let business
-          users route shipping containers to different Lowe's facilities based
-          on demand.
-        </p>
-      </li>
-      <li class="job">
-        <strong>System Software Engineer Intern, <img src="images/icons/akamai.png" alt="">Akamai Technologies</strong>
-        <span>2016</span>
-        <p>
-          Worked on Pliny, Akamai's internal centralized log analysis tool
-          built with ELK. Wrote scripts to ingest access logs in different
-          formats into Elasticsearch.
-        </p>
-      </li>
-    </ul>
-
-    <h2>Tech Stack</h2>
     <p>
-      <strong>Languages:</strong> Java, Python, TypeScript<br>
-      <strong>Frameworks:</strong> Spring Boot, Spring WebFlux, Spring gRPC, Spring Batch, Kafka Streams, JUnit, Mockito, WireMock<br>
-      <strong>Data:</strong> Kafka, Cassandra, PostgreSQL, MongoDB, Hazelcast, Netflix Hollow, Tantivy<br>
-      <strong>Infrastructure &amp; Tools:</strong> Kubernetes, GCP, Confluent Control Center, Splunk, ELK, Grafana, Dynatrace, JMeter
+      I'm on the
+      <a href="https://www.ensembl.org/" target="_blank" rel="noopener">Ensembl</a>
+      team, working mostly on the new website for Ensembl, a genome browser
+      and public database used by researchers worldwide.
     </p>
-
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>B.E. in Computer Science and Engineering, PES College of Engineering (VTU), Mandya</strong>
-        <span>2012 &ndash; 2016</span>
-        <p>Activities and societies: IEEE PESCE Webmaster</p>
-      </li>
-    </ul>
+    <p>
+      I've also worked on
+      <a href="https://github.com/GMOD/Apollo3" target="_blank" rel="noopener">Apollo3</a>
+      (<a href="https://www.biorxiv.org/content/10.64898/2026.06.08.730970v2" target="_blank" rel="noopener">bioRxiv</a>),
+      a genome annotation editor built as a
+      <a href="https://github.com/GMOD/jbrowse-components" target="_blank" rel="noopener">JBrowse 2</a>
+      plugin. I focused on the features needed by Havana, the EMBL-EBI team
+      that curates GENCODE, the reference gene annotations for human and
+      mouse. I also built a custom plugin for their workflow and a service
+      that syncs their annotations into Otter, their existing annotation
+      system.
+    </p>
+    <p>
+      Before EMBL-EBI, I worked for a Fortune 50 retailer,
+      designing and building low-latency inventory streaming systems and
+      microservices.
+    </p>
+    <p>
+      Outside work, I hike, play badminton, and take
+      <a href="gallery.html">photos</a> when I travel.
+    </p>
   </main>
-
-  <script>
-    document.querySelectorAll('.job').forEach(function (job) {
-      job.addEventListener('click', function (event) {
-        if (job.classList.contains('open') && event.target.closest('p')) {
-          return;
-        }
-        job.classList.toggle('open');
-      });
-    });
-  </script>
 
 </body>
 </html>
